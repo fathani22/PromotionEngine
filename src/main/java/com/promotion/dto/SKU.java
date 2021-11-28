@@ -10,6 +10,7 @@ public class SKU {
 
 	String SkuName;
 	int SkuPricePerUnit;
+	
 
 	public String getSkuName() {
 		return SkuName;
