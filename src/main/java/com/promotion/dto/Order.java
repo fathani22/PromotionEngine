@@ -6,7 +6,7 @@ import java.util.Map;
 public class Order {
 	
 	Map<SKU, Integer> SkuQunatity= new HashMap<>();
-	Integer totalPrice;
+	Integer totalPrice=0;
 	
 
 	public Integer getTotalPrice() {

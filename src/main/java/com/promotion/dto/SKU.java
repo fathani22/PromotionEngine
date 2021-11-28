@@ -43,7 +43,7 @@ public class SKU {
 	@Override
 	public int hashCode() {
 
-		return super.hashCode();
+		return this.SkuName.hashCode();
 	}
 
 }

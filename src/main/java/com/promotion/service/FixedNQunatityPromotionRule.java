@@ -1,4 +1,4 @@
-package src.main.java.com.promotion.service;
+package main.java.com.promotion.service;
 
 import java.util.Map;
 
@@ -25,9 +25,10 @@ public class FixedNQunatityPromotionRule extends AbstarctPromotionalRule {
 		SKU fixedPromotionalSKu = fixedSku.getFixedSKU();
 		int minimumQunatity = fixedSku.getFixedQunatity();
 		int totalPrice = order.getOrder().getTotalPrice();
-		if (orderToBeProcess.containsKey(fixedPromotionalSKu)) {
-			int orderedQunatity = orderToBeProcess.get(fixedSku);
-			if (orderedQunatity > minimumQunatity) {
+		if (orderToBeProcess.containsKey(fixedPromotionalSKu) ) {
+		
+			int orderedQunatity = orderToBeProcess.get(fixedSku.getFixedSKU());
+			if (orderedQunatity >= minimumQunatity) {
 				int appliedQ = orderedQunatity / minimumQunatity;
 				totalPrice = totalPrice + (appliedQ * fixedSku.getPrice());
 				int remainingSKU = orderedQunatity % minimumQunatity;

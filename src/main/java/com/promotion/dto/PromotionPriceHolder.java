@@ -20,6 +20,11 @@ public class PromotionPriceHolder {
 	public void setSkuQunatityToProcess(Map<SKU, Integer> skuQunatityToProcess) {
 		SkuQunatityToProcess = skuQunatityToProcess;
 	}
+	public PromotionPriceHolder(Order order, Map<SKU, Integer> skuQunatityToProcess) {
+		super();
+		this.order = order;
+		SkuQunatityToProcess = skuQunatityToProcess;
+	}
 	
 	
 

@@ -23,7 +23,7 @@ public class ComboQunatityPromotionalRule extends AbstarctPromotionalRule {
 		boolean ispromoapplicable = false;
 
 		SKU sku1 = comboSku.getSku1();
-		SKU sku2 = comboSku.getSku1();
+		SKU sku2 = comboSku.getSku2();
 
 		int totalPrice = order.getOrder().getTotalPrice();
 		if (orderToBeProcess.containsKey(sku1) && orderToBeProcess.containsKey(sku2)) {
