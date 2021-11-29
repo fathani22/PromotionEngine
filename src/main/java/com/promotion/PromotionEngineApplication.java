@@ -57,7 +57,7 @@ Total 370
 				SkuQunatity2.put(initialValuesMap.get("B"), 5);
 				SkuQunatity2.put(initialValuesMap.get("C"), 1);
 				Order order2 = new Order();
-				order1.setSkuQunatity(SkuQunatity2);
+				order2.setSkuQunatity(SkuQunatity2);
 				PromotionPriceHolder promotionalHolder2= new PromotionPriceHolder(order2, SkuQunatity2);
 				firstRule.apply(promotionalHolder2);
 				System.out.println("Total Bill for Sceanrio B is : " + promotionalHolder2.getOrder().getTotalPrice() );
@@ -77,7 +77,7 @@ Total 370
 				SkuQunatity3.put(initialValuesMap.get("C"), 1);
 				SkuQunatity3.put(initialValuesMap.get("D"), 1);
 				Order order3 = new Order();
-				order1.setSkuQunatity(SkuQunatity3);
+				order3.setSkuQunatity(SkuQunatity3);
 				PromotionPriceHolder promotionalHolder3= new PromotionPriceHolder(order3, SkuQunatity3);
 				firstRule.apply(promotionalHolder3);
 				System.out.println("Total Bill for Sceanrio B is : " + promotionalHolder3.getOrder().getTotalPrice() );
